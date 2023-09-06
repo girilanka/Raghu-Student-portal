@@ -9,13 +9,23 @@
             color: red;
             font-family: sans-serif;
         }
-       
-        
-        @keyframes blinker {
-            50% {
-                opacity: 0;
-            }
+        .abc{
+            position:absolute;
+            top:230px;
+            left:10px;
         }
+
+        .def{
+            position:absolute;
+            top:230px;
+            left:1270px;
+        }
+            
+        .siz{
+            height: 1000px;
+            width: 5%;
+        }
+            
     </style>
 
   <meta charset="UTF-8" />
@@ -34,10 +44,20 @@
 
 
 </head>
-<body>
-   <h1 class="text-center" style="color:MediumSeaGreen;" >__________________________________________________________________________</h1><br><br>
-    <h1 class="text-center " style="color:Tomato;" >RAGHU INSTITUTE OF TECHNOLOGY STUDENT PORTAL</h1>
-    <h1 class="text-center"style="color:MediumSeaGreen;" >__________________________________________________________________________</h1>
+
+<body style="background-color:rgb(129,254,171);">
+    <div class="siz abc">
+        <marquee direction="down" height="950px" scrollamount="60"><h1> 	⬇</h1></marquee>
+
+        </div>
+    <div class="siz def">
+        <marquee direction="down" height="950px" scrollamount="60"><h1> 	⬇</h1></marquee>
+    
+        </div>
+
+   <h1 class="text-center" style="color:black;" >__________________________________________________________________________</h1><br><br>
+    <h1 class="text-center " style="color:rgb(255,0,0);" >RAGHU INSTITUTE OF TECHNOLOGY STUDENT PORTAL</h1>
+    <h1 class="text-center"style="color:black;" >__________________________________________________________________________</h1>
 
 
 
@@ -51,7 +71,7 @@
 
         {% comment %} <div class="card mx-auto  " style="background-color:black; width: 31rem;"> {% endcomment %}
            
-               <center> <h3 class="text-center]" style="color:rgb(13, 0, 51)"> Enter Student Registration ID or Name </h3></center>
+               <center> <h3 class="text-center" style="color:rgb(13, 0, 51)"> Enter Student Registration ID or Name </h3></center>
                     
         {% comment %} </div> {% endcomment %}
 
@@ -73,26 +93,29 @@
                 </div>
             </div>
     
-<marquee direction="down" height="100px" scrollamount="4" ><h2 class='text-center ' style="color:orange">Scroll Down for <u>STUDENT MENU</u> 	⬇</h2></marquee>
+<marquee direction="down" height="100px" scrollamount="4" ><h2 class='text-center ' style="color:black">Scroll Down for <u>STUDENT MENU</u> 	⬇</h2></marquee>
 <br>
 <br>
-<div class="card mx-auto" style="background-color:black;" >
-<div class="card mx-auto" style="background-color:black; width: 30rem ;">
+{% comment %} <div class="card mx-auto" style="background-color:rgb(255,190,255);" > {% endcomment %}
+<div class="card mx-auto" style="background-color:rgb(129,254,171); width: 30rem ;">
 
-<p><h1 class='text-center'  style="color:rgb(0, 204, 204);"><u> STUDENT MENU</u>  </h1></p>
+<p><h1 class='text-center'  style="color:rgb(255,151,0);"><u> STUDENT MENU</u>  </h1></p>
 
 
-<div class="card mx-auto " style="background-color:black; width: 9rem;">
+    
+
+
+<div class="card mx-auto " style="background-color:rgb(129,254,171); width: 9rem;">
 
 <div class="container pt-5">
 
     <div class="center">
-    <h6 style="color:Tomato;">CSM Students </h6>
+    <h6 style="color:black;">CSM Students </h6>
     <div class="col-lg col-sm col-md col-6 flex-grow-0">
         <div class="category-wrap dropdown d-inline-block float-right">
             <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"> 
-                <i class="fa fa-bars"></i> Select Year </button>
-            <div class="dropdown-menu">
+                <i class="fa fa-bars" ></i> Select Year </button>
+            <div class="dropdown-menu" style="background-color:rgb(0,0,0);">
                 <a class="dropdown-item" style="color:Gray;"  href="{% url 'csm_1st_years' %}">CSM 1st Year</a>
                 <a class="dropdown-item" style="color:MediumSeaGreen;" href="{% url 'csm_2nd_years' %}">CSM 2nd Year</a>
                 <a class="dropdown-item" style="color:Orange;" href="{% url 'csm_3rd_years' %}">CSM 3rd Year</a>
@@ -106,12 +129,12 @@
 
 
 <div class="container pt-5">
-    <h6 style="color:Tomato;">CSD Students </h6>
+    <h6 style="color:black">CSD Students </h6>
     <div class="col-lg col-sm col-md col-6 flex-grow-0">
         <div class="category-wrap dropdown d-inline-block float-right">
             <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"> 
                 <i class="fa fa-bars"></i>Select Year </button>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu" style="background-color:rgb(0,0,0);">
                 <a class="dropdown-item" style="color:Gray;" href="{% url 'csd_1st_years' %}">CSD 1st Year</a>
                 <a class="dropdown-item" style="color:MediumSeaGreen;" href="{% url 'csd_2nd_years' %}">CSD 2nd Year</a>
                 <a class="dropdown-item" style="color:Orange;" href="{% url 'csd_3rd_years' %}">CSD 3rd Year</a>
@@ -123,12 +146,12 @@
 
 
 <div class="container pt-5">
-    <h6 style="color:Tomato;">CSC Students </h6>
+    <h6 style="color:black">CSC Students </h6>
     <div class="col-lg col-sm col-md col-6 flex-grow-0">
         <div class="category-wrap dropdown d-inline-block float-right">
             <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"> 
                 <i class="fa fa-bars"></i>Select Year </button>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu" style="background-color:rgb(0,0,0);">
                 <a class="dropdown-item" style="color:Gray;" href="{% url 'csc_1st_years' %}">CSC 1st Year</a>
                 <a class="dropdown-item" style="color:MediumSeaGreen;" href="{% url 'csc_2nd_years' %}">CSC 2nd Year</a>
                 <a class="dropdown-item" style="color:Orange;" href="{% url 'csc_3rd_years' %}">CSC 3rd Year</a>
@@ -139,12 +162,12 @@
 </div>
 
 <div class="container pt-5">
-    <h6 style="color:Tomato;">CSE Students </h6>
+    <h6 style="color:black">CSE Students </h6>
     <div class="col-lg col-sm col-md col-6 flex-grow-0">
         <div class="category-wrap dropdown d-inline-block float-right">
             <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"> 
                 <i class="fa fa-bars"></i> Select Year </button>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu" style="background-color:rgb(0,0,0);">
                 <a class="dropdown-item" style="color:Gray;" href="{% url 'cse_1st_years' %}">CSE 1st Year</a>
                 <a class="dropdown-item" style="color:MediumSeaGreen;" href="{% url 'cse_2nd_years' %}">CSE 2nd Year</a>
                 <a class="dropdown-item" style="color:Orange;" href="{% url 'cse_3rd_years' %}">CSE 3rd Year</a>
@@ -155,12 +178,12 @@
 </div>
 
 <div class="container pt-5">
-    <h6 style="color:Tomato;">MECH Students </h6>
+    <h6 style="color:black;">MECH Students </h6>
     <div class="col-lg col-sm col-md col-6 flex-grow-0">
         <div class="category-wrap dropdown d-inline-block float-right">
             <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"> 
                 <i class="fa fa-bars"></i> Select Year </button>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu" style="background-color:rgb(0,0,0);">
                 <a class="dropdown-item" style="color:Gray;" href="{% url 'mech_1st_years' %}">MECH 1st Year</a>
                 <a class="dropdown-item" style="color:MediumSeaGreen;" href="{% url 'mech_2nd_years' %}">MECH 2nd Year</a>
                 <a class="dropdown-item" style="color:Orange;" href="{% url 'mech_3rd_years' %}">MECH 3rd Year</a>
@@ -171,12 +194,12 @@
 </div>
 
 <div class="container pt-5">
-    <h6 style="color:Tomato;">CIVIL Students </h6>
+    <h6 style="color:black;">CIVIL Students </h6>
     <div class="col-lg col-sm col-md col-6 flex-grow-0">
         <div class="category-wrap dropdown d-inline-block float-right">
             <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"> 
                 <i class="fa fa-bars"></i> Select Year </button>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu" style="background-color:rgb(0,0,0);">
                 <a class="dropdown-item" style="color:Gray;" href="{% url 'civil_1st_years' %}">CIVIL 1st Year</a>
                 <a class="dropdown-item" style="color:MediumSeaGreen;" href="{% url 'civil_2nd_years' %}">CIVIL 2nd Year</a>
                 <a class="dropdown-item" style="color:Orange;" href="{% url 'civil_3rd_years' %}">CIVIL 3rd Year</a>
@@ -187,12 +210,12 @@
 </div>
 
 <div class="container pt-5">
-    <h6 style="color:Tomato;">ECE Students </h6>
+    <h6 style="color:black;">ECE Students </h6>
     <div class="col-lg col-sm col-md col-6 flex-grow-0">
         <div class="category-wrap dropdown d-inline-block float-right">
             <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"> 
                 <i class="fa fa-bars"></i> Select Year </button>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu" style="background-color:rgb(0,0,0);">
                 <a class="dropdown-item" style="color:Gray;" href="{% url 'ece_1st_years' %}">ECE 1st Year</a>
                 <a class="dropdown-item" style="color:MediumSeaGreen;" href="{% url 'ece_2nd_years' %}">ECE 2nd Year</a>
                 <a class="dropdown-item" style="color:Orange;" href="{% url 'ece_3rd_years' %}">ECE 3rd Year</a>
@@ -203,12 +226,12 @@
 </div>
 
 <div class="container pt-5">
-    <h6 style="color:Tomato;">EEE Students </h6>
+    <h6 style="color:black;">EEE Students </h6>
     <div class="col-lg col-sm col-md col-6 flex-grow-0">
         <div class="category-wrap dropdown d-inline-block float-right">
             <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"> 
                 <i class="fa fa-bars"></i> Select Year </button>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu" style="background-color:rgb(0,0,0);">
                 <a class="dropdown-item" style="color:Gray;" href="{% url 'eee_1st_years' %}">EEE 1st Year</a>
                 <a class="dropdown-item" style="color:MediumSeaGreen;" href="{% url 'eee_2nd_years' %}">EEE 2nd Year</a>
                 <a class="dropdown-item" style="color:Orange;" href="{% url 'eee_3rd_years' %}">EEE 3rd Year</a>
@@ -219,18 +242,17 @@
 </div>
 <br>
 </div>
+<br>
 
 <div class="card mx-auto" style="width: 20rem;">
-    <a href ="{% url 'home' %}" class='btn btn-primary blinks'>Go To Top</a>
+    <a href ="{% url 'home' %}" class='btn btn-primary blinks'>Go To Top ⬆</a>
 </div>
 
 <br>
 <br>
-<br>
-<br>
-<br>
+
 </div>
-</div>
+{% comment %} </div> {% endcomment %}
 
 
 
